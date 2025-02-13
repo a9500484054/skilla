@@ -1,0 +1,15 @@
+.ColSort {
+    display: inline;
+    position: relative;
+    cursor: pointer;
+    transition: all .5s;
+    &__title {
+        position: relative;
+        display: inline;
+    }
+    &__arrow {
+        position: absolute;
+        right: -13px;
+        top: -1px;
+    }
+}

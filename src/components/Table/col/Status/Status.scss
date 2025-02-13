@@ -1,0 +1,35 @@
+.Status {
+  &__badge {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0%;
+    padding: 2px 6px;
+    border-radius: 4px;
+    max-width: 70px;
+    display: inline;
+    &--good {
+      border: 1px solid #122945;
+      color: #122945;
+      background-color: #D8E4FB;
+    }
+    &--bad {
+      border: 1px solid #EA1A4F;
+      color: #EA1A4F;
+      background-color: #FEE9EF;
+    }
+    &--success {
+     border: 1px solid #00A775;
+      color: #00A775;
+      background-color: #DBF8EF;
+    }
+  }
+  &__error {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19.6px;
+    letter-spacing: 0%;  
+    color: #EA1A4F;      
+  }
+
+}

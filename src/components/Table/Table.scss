@@ -1,0 +1,144 @@
+.Table {
+    width: 100%;
+    border-collapse: collapse;
+    padding-left: 40px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 5px 0px #E9EDF3;
+    background-color: #fff;
+    th {
+        text-align: start;
+
+    }
+    .row {
+    
+    }
+  
+    .col {
+      padding: 12px;
+    }
+
+  
+    thead {
+        
+      .col {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20.72px;
+        letter-spacing: 0%;
+        color: #5E7793;
+        // padding: 24px 40px 20px;
+        text-align: left;
+        padding: 20px 0;
+        &:last-child {
+          padding-right: 40px;
+        }
+        &:first-child {
+          padding-left: 40px;
+        }
+        &__time {
+          text-align: end;
+        }
+      }
+    }
+  
+    tbody {
+      .col {
+        font-size: 14px;
+        height: 65px;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 21px;
+        letter-spacing: 1%;
+        color: #122945;
+        margin: 0;
+        padding: 0;
+        &:first-child {
+          padding-left: 40px;
+        }
+        &:last-child {
+          padding-right: 40px;
+        }
+      }
+
+      .row {
+        position: relative;
+        transition: background-color 0.3s ease; 
+ 
+        & .CustomAudioPlayer {
+          display: none;
+        }
+        
+        &:hover {
+          background-color: #d4dff32c;
+          .Time__time {
+            display: none;
+          }
+            
+          .CustomAudioPlayer {
+            display: flex;
+            opacity: 1;
+            transform: translateY(0);
+            visibility: visible; /* Делаем элемент видимым при наведении */
+          }
+        }
+
+
+        &::after {
+          content: "";
+          width: calc(100% - 40px);
+          display: block;
+          height: 1px;
+          background-color: #EAF0FA ;
+          position: absolute;
+          top: 0;
+          left: 40px;
+        }
+        
+      }
+  
+      img {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        margin-right: 8px;
+      }
+      .col__call {
+        justify-content: center;
+        width: calc(3.4rem + 40px);
+      }
+      .col__date {
+        width:  5.5rem;;
+      }
+    
+      .col__person {
+          width: 8.1rem;
+
+      }
+    
+      .col__lead {
+        width: 20.3rem;
+        flex-direction: column;
+        align-items: flex-start;
+       
+    
+        div {
+          margin-bottom: 4px;
+        }
+      }
+      .col__source {
+          width: 13.4rem;
+      }
+      .col__status {
+        width: 13.8rem;
+      }
+    
+      .col__time {
+        width: 22.5rem;
+        // display: flex;
+        // justify-content: flex-end;
+        text-align: end;
+      }
+    }
+  
+  }
+

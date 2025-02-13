@@ -1,0 +1,39 @@
+.DropdownType {
+    display: flex;
+    align-items: center;
+
+    &__dropdown {
+
+    }
+    &__arrow {
+        margin-left: 8px;
+        svg {
+            transform: rotate(180deg);
+        }
+        &--active {
+            color: #002CFB;
+            svg {
+                transform: rotate(0);
+                
+            } 
+        }
+    }
+    &__clear {
+        margin-top: 7px;
+        margin-left: 16px;
+        display: flex;
+        align-items: center;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0px;
+        color: #5E7793;
+        svg {
+            margin-left: 4px;
+        }
+        &:hover {
+            color: #002CFB;
+        }
+
+    }
+}
